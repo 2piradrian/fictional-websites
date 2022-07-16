@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: black;
+}
+
+
+/* Header */
+
+.header {
+    width: 88%;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+}
+
+.menuHamburguesa {
+    display: none;
+}
+
+.checkMenu {
+    display: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Hero */
+
+.hero {
+    background-color: white;
+}
+
+
+/* Displays */
+
+h1 {
+    font-size: clamp(25px, 5vw, 48px);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(18px, 4vw, 25px);
+}
+
+.buttons {
+    padding: 25px;
+}
+
+.buttons button {
+    height: 44px;
+    width: 208px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #52B37C;
+    color: white;
+    border: 0 solid ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    border: 1px solid #52B37C;
+    background-color: white;
+    color: #52B37C;
+}
+
+.display {
+    height: auto;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-conteiner {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.display-text {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 350px;
+}
+
+.iso {
+    max-width: 150px;
+}
+
+.iso>img {
+    width: 100%;
+}
+
+.display-img {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.display-img>img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Screenshots */
+
+.screens {
+    height: auto;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #f0f0f0;
+}
+
+.screens-img {
+    width: 28%;
+    flex: 0 1 250px;
+}
+
+.screens-app {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #f0f0f0;
+}
+
+.cards {
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card-content {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    flex: 0 1 320px;
+}
+
+.card-content>i {
+    font-size: 40px;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    padding: 20px;
+    background-color: #52B37C;
+}
+
+@media screen and (max-width: 955px) {
+    .header {
+        justify-content: start;
+    }
+    .display-conteiner {
+        justify-content: center;
+    }
+    .display-content {
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - 150px);
+        align-items: center;
+    }
+    .display-text {
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+    .buttons button {
+        width: 80vw;
+    }
+    /* nav */
+    nav {
+        position: relative;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    footer ul li {
+        font-size: 12px;
+    }
+    label i {
+        font-size: 32px;
+    }
+    .menuHamburguesa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .checkMenu:checked~ul {
+        position: relative;
+        width: 80vw;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}

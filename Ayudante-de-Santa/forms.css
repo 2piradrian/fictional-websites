@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+.buttons button {
+    margin: 0 auto;
+    height: 44px;
+    width: 208px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #52B37C;
+    color: white;
+    border: 0 solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1 1 320px;
+}
+
+.buttons button:hover {
+    border: 1px solid #52B37C;
+    background-color: white;
+    color: #52B37C;
+}
+
+.display {
+    height: calc(auto + 100px);
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-conteiner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.display-text {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 350px;
+}
+
+.display-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iso {
+    max-width: 150px;
+}
+
+.iso>img {
+    width: 100%;
+}
+
+.display-img {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.display-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.screen-rotada {
+    transform: rotate(10deg);
+}
+
+
+/* Forms */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    font-weight: 700;
+}
+
+input {
+    border: none;
+    height: 45px;
+    background-color: #f0f0f0;
+    text-indent: 10px;
+    border-bottom: 1px solid #52B37C;
+}
+
+
+/* @media screen and (max-width: 570px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+} */
